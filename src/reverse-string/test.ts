@@ -1,5 +1,10 @@
 import { reverseString } from './';
 
+// import {
+//   reverseString as solutionReverseString,
+//   reverseWithoutArrayReverse as solutionReverseWithoutArrayReverse,
+// } from './solution';
+
 let method: (string: string) => string;
 
 describe('Reverse String', () => {
