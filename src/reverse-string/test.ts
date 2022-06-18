@@ -1,17 +1,21 @@
-import reverseString from './index';
+import { reverseString } from './';
+
+let method: (string: string) => string;
 
 describe('Reverse String', () => {
+  beforeEach(() => {
+    method = reverseString;
+  });
+
   it('should be defined', () => {
-    expect(reverseString).toBeDefined();
+    expect(method).toBeDefined();
   });
 
   it('should return the reversed string', () => {
-    expect(reverseString('practicing javascript')).toBe(
-      'tpircsavaj gnicitcarp'
-    );
+    expect(method('practicing javascript')).toBe('tpircsavaj gnicitcarp');
   });
 
   it('should reverses the reversed string', () => {
-    expect(reverseString('cba')).toBe('abc');
+    expect(method('cba')).toBe('abc');
   });
 });
