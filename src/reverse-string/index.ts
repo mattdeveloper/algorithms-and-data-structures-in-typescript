@@ -4,9 +4,6 @@
  * @param string
  * @returns string
  */
-
-function reverseString(string: string): string {
+export function reverseString(string: string): string {
   return '';
 }
-
-export default reverseString;
