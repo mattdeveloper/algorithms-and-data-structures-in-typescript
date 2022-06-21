@@ -1,4 +1,4 @@
-import { reverseString } from './';
+import { reverseString } from '.';
 
 // import {
 //   reverseString as solutionReverseString,
